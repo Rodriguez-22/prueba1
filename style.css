@@ -1,0 +1,13 @@
+.titulo{
+    color: orange;
+}
+
+.texto{
+    color: blue;
+}
+
+.pie{
+    background-color: red;
+    color: yellow;
+    float: right;
+}
