@@ -13,10 +13,10 @@
             <input id="nombre" name="nombre" type="text" required minlength="4" maxlength="8" size="100" placeholder="Escribe tu nombre"><br>
     
             <label for="sexo">Sexo: </label>
-            <select id="sexo">
-                <!--Etiqueta option-->
+            <select id="sexo" required>
+                <option disabled selected hidden value="">Seleccione una opción</option>
                 <option value="1">Hombre</option> 
-                <option value="2" selected>Mujer</option>
+                <option value="2">Mujer</option>
                 <option value="3">Otro</option>
             </select><br><br>
     
@@ -29,10 +29,17 @@
             <input type="date" id="calendario" name="calendario"><br>
     
             <label for="email">Email: </label>
-            <input id="email" type="email"><br><br>
-    
+            <input id="email" type="email" name="email" required placeholder="correo@ejemplo.com" pattern=".+@g\.educaand\.es" title="Introduce tu correo de @g.educaand.es"><br><br>
+            
+            <label for="teléfono"></label>
+            <input type="tel"
+                    id="teléfono"
+                    name="teléfono"
+                    placeholder="+34 123456789"
+                    pattern="\=[0-9]{2}\s\d{9}"
+                    required>
             <label for="estudios">Estudios: </label>
-            <select id="estudios">
+            <select id="estudios" name="estudios">
                <optgroup label="Estudios Universitarios">
                   <option>Doctorado</option>
                   <option>Máster</option>
