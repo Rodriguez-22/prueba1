@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALONES JOSELICO</title>
+    <link rel="stylesheet" href="Pedidos.css">
+    <link rel="shortcut icon" href="./FAVICON/favicon-32x32.png">
+    <script>
+        filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>SALONES JOSELICO</h1>
+        <h2><b>Pedidos A Domicilio:</b></h2>
+    </header>
+    <main>
+        
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Toda la comida</button>
+            <button class="btn" onclick="filterSelection('nature')"> Comida</button>
+            <button class="btn" onclick="filterSelection('cars')"> Bebida</button>
+            <button class="btn" onclick="filterSelection('people')"> Postre</button>
+        </div>
+
+        <div class="row">
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida.jpg" alt="Mountains" style="width:50%">
+                    <h4>Hamburguesa con alitas y patatas</h4>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida 2.jpg" alt="Lights" style="width:50%">
+                    <h4>Menú Hamburguesa</h4>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida 3.jpg" alt="Nature" style="width:50%">
+                    <h4>Menú Hamburguesa(doble carne)</h4>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida 4.jpg" alt="Mountains" style="width:50%">
+                    <h4>Dúrum</h4>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida 5.jpg" alt="Mountains" style="width:50%">
+                    <h4>Pizza Joselico</h4>
+                    <p>Tiene olivas, jamon de york, tomate, quesio y anchoas</p>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="./Imágenes/comida6.jpg" alt="Mountains" style="width:50%">
+                    <h4>Perritos calientes</h4>
+                </div>
+            </div>
+
+
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida1.jpg" alt="Car" style="width:50%">
+                    <h4>Limonada</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida2.jpg" alt="Car" style="width:50%">
+                    <h4>Bebida Energética</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida3.jpg" alt="Car" style="width:50%">
+                    <h4>Vino Tinto</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida4.jpg" alt="Car" style="width:50%">
+                    <h4>Vino blanco</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida5.jpg" alt="Car" style="width:50%">
+                    <h4>Refrescos</h4>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="./Imágenes/bebida6.jpg" alt="Car" style="width:50%">
+                    <h4>Zumo de Frutas</h4>
+                </div>
+            </div>
+
+
+
+            <div class="column people">
+                <div class="content">
+                    <img src="./Imágenes/postre5.jpg" alt="People" style="width:50%">
+                    <h4>Flan de Huevo</h4>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="./Imágenes/postre2.jpg" alt="People" style="width:50%">
+                    <h4>Tarta de Queso</h4>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="./Imágenes/postre3.jpg" alt="People" style="width:50%">
+                    <h4>Tarta de tres Chocolates</h4>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        JOSÉ RODRÍGUEZ RODRÍGUEZ SALONES JOSELICO <a class="indice" href="CASINO.html"> Inicio </a>
+    </footer>
+</body>
+
+</html>

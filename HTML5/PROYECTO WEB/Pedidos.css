@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    text-align: center;
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px white;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px white;
+}
+
+h3 {
+    color: white;
+    text-shadow: 2px 2px 4px white;
+}
+
+header {
+    box-shadow: -8px 10px 4px rgb(63, 4, 63);
+    margin-left: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    box-shadow: 8px -10px 4px rgb(63, 4, 63);
+    text-shadow: 2px 2px 4px white;
+}
+
+header,
+footer {
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 98%;
+    background-image: url(./Imágenes/fondocasino.jpg);
+}
+
+.indice {
+    float: left;
+    color: white;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+    margin-bottom: 80px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+@media (max-width:400px) {
+    /* //Instrucciones CSS */
+}

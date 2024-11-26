@@ -1,0 +1,119 @@
+/*
+    Mi primer proyecto Web
+    José Rodríguez Rodríguez
+    DICIEMBRE 2023
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Imágenes/textura.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+}
+
+header,
+footer {
+    background-color: rgb(2, 2, 75);
+    color: rgb(245, 62, 62);
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 98%;
+    background-image: url(./Imágenes/fondocasino.jpg);
+}
+
+.MENUS>a {
+    background-color: rgb(53, 1, 53);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.MENUS>a:hover {
+    background-color: rgb(173, 8, 8);
+    color: white;
+}
+
+.MENUS {
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.titulos {
+    text-align: center;
+    padding: 20px;
+    font-family: Pompiere;
+    font-size: 30px;
+    text-decoration: underline;
+    text-shadow: red 3px -5px 4px;
+    color: white;
+}
+
+.experiencia {
+    background-color: rgb(224, 197, 248);
+    width: 65%;
+    margin: auto;
+    border: darkblue 4px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.experiencia .experiencias {
+    border: 5px dotted blueviolet;
+    padding: 10px 0px 0px 0px;
+}
+
+#experiencia {
+    text-align: center;
+    text-shadow: 0.2px 1px 1px darkblue;
+}
+
+.parrafo {
+    margin: 6%;
+    text-align: justify;
+    color: purple;
+}
+
+.grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.grid iframe,
+.video {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    transition: all 1s ease;
+    border: 7px dotted blueviolet;
+    border-radius: 10px;
+}
+
+.grid iframe:hover,
+video:hover {
+    transform: scale(0.9);
+}
+
+@media (max-width:400px) {
+    /* //Instrucciones CSS */
+}

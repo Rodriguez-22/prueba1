@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALONES JOSELICO</title>
+  <link rel="stylesheet" href="Máquinas.css">
+  <link rel="shortcut icon" href="./FAVICON/favicon-32x32.png">
+  <script>
+    function mostrar() {
+      var elemento = document.getElementById("info");
+      elemento.style.display = "block";
+    }
+    function ocultar() {
+      var elemento = document.getElementById("info");
+      elemento.style.display = "none";
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>SALONES JOSELICO</h1>
+    <h2><b>Personal de la Empresa: </b></h2>
+  </header>
+  <main>
+    <h1 onmouseover="ocultar()" onmouseout="mostrar()" class="info">Los Camareros/Camareras</h1>
+    <h2>Los tres Camareros</h2>
+    <article id="info">
+      <p>
+        Rodrigo Rodríguez es un gran y admirador trabajador, destaca por su gran velocidad en la preparación de cócteles, la gran forma de atender a los trabajadores.
+      </p>
+      <p>
+        Rafael Caparros gran trabajador debido a su experiencia en este sector, es uno de los mejores Cuprieres del
+        mundo entero
+      </p>
+      <p>
+        Celia Carreño al igual que Rafael ella no destaca por su experiencia ya que es nueva en este sector pero que
+        demuestra un gran nivel y capacidad para ser una de las mejores
+      </p>
+    </article>
+    <div class="card">
+      <img src="./Imágenes/barman.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Rodrigo Rodríguez</b></h4>
+        <p>Barman</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Imágenes/cuprier masculino.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Rafael Caparros</b></h4>
+        <p>Cuprier Masculino</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Imágenes/cuprier femenino.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>Celia Rodríguez</b></h4>
+        <p>Cuprier femenino</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    JOSÉ RODRÍGUEZ RODRÍGUEZ SALONES JOSELICO <a class="indice" href="CASINO.html"> Inicio </a>
+  </footer>
+</body>
+
+</html>

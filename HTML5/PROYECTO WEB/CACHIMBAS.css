@@ -1,0 +1,125 @@
+/*
+    Mi primer proyecto Web
+    José Rodríguez Rodríguez
+    DICIEMBRE 2023
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    text-shadow: 2px 2px 4px white;
+}
+
+h2 {
+    color: red;
+    text-shadow: 2px 2px 4px white;
+}
+
+h3 {
+    color: red;
+    text-shadow: 2px 2px 4px purple;
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 120%;
+    z-index: -1;
+}
+
+header {
+    box-shadow: -8px 10px 4px purple;
+    margin-left: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    box-shadow: 8px -10px 4px purple;
+    text-shadow: 2px 2px 4px white;
+}
+
+header,
+footer {
+    color: rgb(173, 7, 7);
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 98%;
+    background-image: url(./Imágenes/fondocasino.jpg);
+}
+
+table {
+    background-image:
+        linear-gradient(to left,
+            rgb(56, 56, 134), rgb(129, 58, 129));
+    border-collapse: collapse;
+    border: 3px solid white;
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+    caption-side: bottom;
+    box-shadow: 10px 10px 15px purple;
+    color: rgb(0, 0, 0);
+}
+
+caption {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-style: italic;
+    color: rgb(129, 32, 32);
+    text-shadow: 2px 2px 4px purple;
+
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+.indice {
+    float: left;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width:400px) {
+    /* //Instrucciones CSS */
+}
